@@ -11,7 +11,7 @@ A collection of React projects built while learning modern React development. Th
 | Counter App    | React, `useState`, Event Handling         | [ Counter App](./counter-app)       |
 | Login Page     | Context API (Method 1), Authentication UI | [ Login Page](./context-api)        |
 | Theme Switcher | Context API (Method 2), Dark/Light Theme  | [ Theme Switcher](./theme-switcher) |
-| To Do List     | Context API with LocalStorage             | [ To Do List](./todo-context-api/)  |
+| To Do List     | Context API (Method 3) with LocalStorage  | [ To Do List](./todo-context-api/)  |
 
 ---
 

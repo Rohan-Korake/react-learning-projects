@@ -1,11 +1,7 @@
-import { useState } from "react";
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <>
-      <h1 className="bg-amber-400 text-white">Hello rohan</h1>
-    </>
-  );
+  return <Home />;
 }
 
 export default App;
