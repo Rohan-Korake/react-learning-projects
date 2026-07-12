@@ -9,7 +9,7 @@ function AddTodo() {
     e.preventDefault();
     if (!todo) return;
 
-    addTodo({ todo, isCompete: false });
+    addTodo({ todo, isComplete: false });
     setTodo("");
   };
 

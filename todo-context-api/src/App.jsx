@@ -9,9 +9,11 @@ function App() {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
   };
 
-  const updateTodo = (id, todo) => {
+  const updateTodo = (id, newTodoText) => {
     setTodos((prev) =>
-      prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo)),
+      prev.map((prevTodo) =>
+        prevTodo.id === id ? { ...prevTodo, todo: newTodoText } : prevTodo,
+      ),
     );
   };
 
@@ -37,7 +39,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (todos && todos.length > 0) {
+    if (todos && todos.length >= 0) {
       localStorage.setItem("todos", JSON.stringify(todos));
     }
   }, [todos]);
